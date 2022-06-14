@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2rem;
+} */
+/*******HEADER H1 WITH STYLE*********/
+h1 {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  letter-spacing: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+h1::first-letter {
+  color: var(--clr-primario-vic);
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+/*******HEADER H1 WITH STYLE*********/
+/**********WRAPPER****/
+
+/***********SECTION BIO***************/
+/******BIO******************/
+.table-bio {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.table-bio div {
+  padding: 10px;
+}
+.table-bio img {
+  border-radius: 30%;
+  width: 50%;
+  height: auto;
+  box-shadow: 4px 6px 13px 7px #65a47c;
+  /* transform: rotate(7deg); */
+}
+.text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+/******MEDIA********/
+@media (max-width: 600px) {
+  #bio {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .table-post {
+    flex-direction: column;
+    text-align: center;
+  }
+  #rates {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .table-bio {
+    flex-direction: column;
+  }
+  .table-bio img {
+    width: 50%;
+  }
+}

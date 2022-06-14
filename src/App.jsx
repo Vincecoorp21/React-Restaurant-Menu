@@ -1,7 +1,10 @@
 //import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
+import BookForm from './components/Booking/BookForm';
+import Main from './components/Main/Main';
+import './App.css';
 
 function App() {
   const dishes = [
@@ -35,8 +38,14 @@ function App() {
   ];
   return (
     <div className='App'>
-      <Header />
-      <Home dishes={dishes}></Home>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/home' element={<Home dishes={dishes} />} />
+          <Route path='/booking' element={<BookForm />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
