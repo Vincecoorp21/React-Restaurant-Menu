@@ -10,3 +10,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   margin: 2rem;
 }
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: rgb(196, 221, 255);
+}

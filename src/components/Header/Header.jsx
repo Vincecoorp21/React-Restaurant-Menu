@@ -3,9 +3,11 @@ import '../Header/Header.css';
 
 const Header = () => {
   return (
-    <div className='header'>
-      <h1>Welcome to my restaurant</h1>
-    </div>
+    <nav className='header'>
+      <span>Header</span>
+
+      {/* <h1>Welcome to my restaurant</h1> */}
+    </nav>
   );
 };
 export default Header;
